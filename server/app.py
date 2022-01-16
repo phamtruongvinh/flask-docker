@@ -11,9 +11,6 @@ def home():
     }
     return render_template('index.html', info=info)
 
-@app.route('/hello')
-def hello():
-    return 'hello world!'
 
 @app.route('/sum/<int:a>/<int:b>')
 def sum(a,b):
